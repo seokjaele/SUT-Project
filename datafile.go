@@ -49,7 +49,7 @@ func (d *Date) SetDay(day int) error {
 
 	return nil
 }
-
+/*Test*/
 func GetStrings(filename string) ([]string, error) {
 
 	var lines []string
