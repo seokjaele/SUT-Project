@@ -3,6 +3,7 @@ package datafile
 import (
 	"bufio"
 	"errors"
+	"fmt"
 	"os"
 )
 
@@ -79,4 +80,9 @@ func GetStrings(filename string) ([]string, error) {
 	}
 
 	return lines, nil
+}
+
+func PrintStrings(printString string) {
+
+	fmt.Println(printString)
 }
