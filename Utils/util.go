@@ -10,3 +10,7 @@ func PrintUtilString(utilString string) {
 func PrintUtilString2(utilString string) {
 	fmt.Println(utilString)
 }
+
+func PrintUtilString3(utilString string) {
+	fmt.Println(utilString)
+}
