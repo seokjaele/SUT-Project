@@ -49,11 +49,12 @@ func (d *Date) SetDay(day int) error {
 
 	return nil
 }
-/*Test*/
+
+/* Test time 11.02 */
 func GetStrings(filename string) ([]string, error) {
 
 	var lines []string
-	var count int
+
 	file, err := os.Open(filename)
 
 	if err != nil {
