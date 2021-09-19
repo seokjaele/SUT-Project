@@ -3,6 +3,7 @@ package datafile
 import (
 	"bufio"
 	"errors"
+	"fmt"
 	"os"
 )
 
@@ -49,11 +50,12 @@ func (d *Date) SetDay(day int) error {
 
 	return nil
 }
-/*Test*/
+
+/* Test time 11.02 */
 func GetStrings(filename string) ([]string, error) {
 
 	var lines []string
-	var count int
+
 	file, err := os.Open(filename)
 
 	if err != nil {
@@ -78,4 +80,9 @@ func GetStrings(filename string) ([]string, error) {
 	}
 
 	return lines, nil
+}
+
+func PrintStrings(printString string) {
+
+	fmt.Println(printString)
 }
